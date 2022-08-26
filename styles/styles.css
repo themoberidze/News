@@ -1,0 +1,198 @@
+/* ---resret css--- */
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* -----Header----- */
+header{
+    height: 100px;
+    padding: 30px;
+    background-color: rgb(179, 178, 178);
+}
+h1{
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/NASA_logo.svg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-indent: -999999999px;
+    margin-right: 20px;
+}
+h1 a{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+header li{
+    margin-right: 20px;
+    position: relative;
+}
+header li a{
+    color: #000000;
+    font-size: 24px;
+    padding: 10px;
+    position: relative;
+}
+header li a:active{
+    color: rgb(207, 82, 82);
+}
+header li a::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 2s;
+}
+header li a:hover::before{
+    width: 100%;
+}
+header li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: width 2s;
+}
+header li a:hover::after{
+    width: 100%;
+}
+
+/* -----Main----- */
+.slide{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/spacecraft.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.news{
+    background-color: #ffffff;
+    padding: 20px;
+}
+article{
+    background-color: #ff9900;
+}
+.color1{
+    background-color:#FFC700;
+}
+.color2{
+    background-color:#FFE600;
+}
+.newsimg{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.newsimg img{
+    width: 100%;
+}
+.newstext h2{
+    font-size: 24px;
+}
+.newstext h2 a{
+    color: rgb(91, 179, 179);
+}
+.newstext p{
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.newstext{
+    padding: 10px;
+}
+.readmore a{
+    color: rgb(0, 255, 0);
+}
+.readmore a::after{
+    content: "...";
+}
+
+/* ---news1---news2---news3--- */
+.back{
+    padding: 20px;
+}
+.back a{
+    color: rgba(0, 0, 0, 0.5);
+}
+.back a::before{
+    content: "<< ";
+}
+.newsarticle section{
+    background-color: #FF9900;
+    width: 95%;
+    margin: 0 auto;
+}
+.newsarticle2{
+    background-color:#FFC700;
+}
+.newsarticle3{
+    background-color:#FFE600;
+}
+.newsarticle h2{
+    padding: 30px;
+}
+.newsarticle .newsimg{
+    height: 200px;
+    overflow: hidden;
+}
+.text{
+    padding: 20px;
+}
+
+/* -----Social Media----- */
+.social{
+    width: 50px;
+    height: 100px;
+    overflow: hidden;
+    position: fixed;
+    top: 200px;
+    right: 0;
+}
+.facebook, .instagram{
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: background-image 1s;
+}
+.facebook{
+    background-image: url(../img/fb.png);
+}
+.instagram{
+    background-image: url(../img/instagram.png);
+}
+.facebook:hover{
+    cursor: pointer;
+    background-image: url(../img/fb\ color.png);
+}
+.instagram:hover{
+    cursor: pointer;
+    background-image: url(../img/instagram\ color.png);
+}
+.facebook a, .instagram a{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+/* ----- Footer ----- */
+footer{
+    padding: 20px;
+}
